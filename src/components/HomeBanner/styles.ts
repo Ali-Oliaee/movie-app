@@ -4,12 +4,14 @@ import {Colors} from '../../theme/colors';
 const styles = StyleSheet.create({
   container: {
     position: 'relative',
-    width: 250,
-    height: 400,
+    width: 280,
+    height: 480,
+    marginHorizontal: 10,
   },
   image: {
     width: '100%',
     height: '100%',
+    borderRadius: 10,
   },
   content: {
     position: 'absolute',
@@ -36,8 +38,13 @@ const styles = StyleSheet.create({
   },
   description: {
     color: Colors.white,
-    fontSize: 10,
+    fontSize: 12,
     marginVertical: 4,
+  },
+  tagsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
   },
 });
 

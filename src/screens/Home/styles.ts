@@ -3,11 +3,13 @@ import {Colors} from '../../theme/colors';
 
 const styles = StyleSheet.create({
   categoryContainer: {
-    marginVertical: 20,
+    marginTop: 30,
+    height: 0,
   },
   categoryItem: {
-    padding: 10,
+    paddingHorizontal: 10,
     marginHorizontal: 6,
+    height: 24,
   },
   categoryItemText: {
     color: 'rgba(255, 255, 255, 0.7)',

@@ -8,7 +8,7 @@ const Tag: React.FC<Props> = ({title, isRate}) => {
   return (
     <View style={[styles.container, !title && styles.invisible]}>
       <Text style={styles.title}>{title}</Text>
-      {isRate && <ImdbIcon />}
+      {isRate && <ImdbIcon style={styles.rateIcon} />}
     </View>
   );
 };
