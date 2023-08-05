@@ -1,10 +1,11 @@
 import React from 'react';
 import {ScrollView, Text, View} from 'react-native';
 import {ActorCard, HomeBanner} from '../../components';
+import AppLayout from '../../layouts/AppLayout';
 
 const HomeScreen: React.FC = () => {
   return (
-    <View>
+    <AppLayout>
       <Text>HomeScreen</Text>
       <ScrollView horizontal>
         <HomeBanner
@@ -56,7 +57,7 @@ const HomeScreen: React.FC = () => {
           name="Johnny Depp"
         />
       </ScrollView>
-    </View>
+    </AppLayout>
   );
 };
 
