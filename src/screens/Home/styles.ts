@@ -4,7 +4,6 @@ import {Colors} from '../../theme/colors';
 const styles = StyleSheet.create({
   categoryContainer: {
     marginTop: 30,
-    height: 0,
   },
   categoryItem: {
     paddingHorizontal: 10,
