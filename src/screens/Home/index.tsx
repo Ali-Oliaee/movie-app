@@ -1,6 +1,6 @@
 import React from 'react';
 import {ScrollView, Text, View} from 'react-native';
-import {HomeBanner} from '../../components';
+import {ActorCard, HomeBanner} from '../../components';
 
 const HomeScreen: React.FC = () => {
   return (
@@ -36,6 +36,24 @@ const HomeScreen: React.FC = () => {
           year={2023}
           age="+18"
           rate={7.1}
+        />
+      </ScrollView>
+      <ScrollView horizontal>
+        <ActorCard
+          image={require('../../assets/images/dicaprio.png')}
+          name="Leonardo DiCaprio"
+        />
+        <ActorCard
+          image={require('../../assets/images/scarlett-johansson.png')}
+          name="Scarlett Johansson"
+        />
+        <ActorCard
+          image={require('../../assets/images/george-clooney.png')}
+          name="George Clooney"
+        />
+        <ActorCard
+          image={require('../../assets/images/johnny-depp.jpg')}
+          name="Johnny Depp"
         />
       </ScrollView>
     </View>
