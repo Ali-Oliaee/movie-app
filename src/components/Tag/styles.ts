@@ -1,12 +1,14 @@
 import {StyleSheet} from 'react-native';
+import {Colors} from '../../theme/colors';
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 4,
+    paddingVertical: 2,
     paddingHorizontal: 8,
-    backgroundColor: 'rgba(0,0,0,0.4)',
-    borderRadius: 8,
+    backgroundColor: 'rgba(257,257,257,0.2)',
+    borderRadius: 4,
     marginEnd: 10,
+    marginBottom: 6,
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -14,10 +16,12 @@ const styles = StyleSheet.create({
     display: 'none',
   },
   title: {
-    color: '#fff',
+    color: Colors.white,
     fontSize: 12,
     fontWeight: 'bold',
-    marginEnd: 4,
+  },
+  rateIcon: {
+    marginStart: 8,
   },
 });
 

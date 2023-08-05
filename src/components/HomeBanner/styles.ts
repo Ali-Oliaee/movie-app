@@ -1,14 +1,17 @@
 import {StyleSheet} from 'react-native';
+import {Colors} from '../../theme/colors';
 
 const styles = StyleSheet.create({
   container: {
     position: 'relative',
-    width: 250,
-    height: 400,
+    width: 280,
+    height: 480,
+    marginHorizontal: 10,
   },
   image: {
     width: '100%',
     height: '100%',
+    borderRadius: 10,
   },
   content: {
     position: 'absolute',
@@ -23,20 +26,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    color: '#fff',
+    color: Colors.white,
     fontSize: 16,
     fontWeight: 'bold',
   },
   kind: {
-    color: '#fff',
+    color: Colors.white,
     fontSize: 10,
     marginStart: 10,
     marginTop: 2,
   },
   description: {
-    color: '#fff',
-    fontSize: 10,
+    color: Colors.white,
+    fontSize: 12,
     marginVertical: 4,
+  },
+  tagsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
   },
 });
 

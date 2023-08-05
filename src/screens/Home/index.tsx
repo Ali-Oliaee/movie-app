@@ -1,11 +1,31 @@
 import React from 'react';
-import {ScrollView, Text, View} from 'react-native';
+import {ScrollView, Text, TouchableOpacity} from 'react-native';
 import {ActorCard, HomeBanner} from '../../components';
+import AppLayout from '../../layouts/AppLayout';
+import {homeCategory} from '../../utils/genres';
+import styles from './styles';
 
 const HomeScreen: React.FC = () => {
+  const [activeCategory, setActiveCategory] = React.useState<number>(1);
+
   return (
-    <View>
-      <Text>HomeScreen</Text>
+    <AppLayout>
+      <ScrollView horizontal style={styles.categoryContainer}>
+        {homeCategory.map(({id, title}) => (
+          <TouchableOpacity
+            key={id}
+            style={styles.categoryItem}
+            onPress={() => setActiveCategory(id)}>
+            <Text
+              style={[
+                styles.categoryItemText,
+                id === activeCategory && styles.categoryItemTextActive,
+              ]}>
+              {title}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
       <ScrollView horizontal>
         <HomeBanner
           image={require('../../assets/images/oppenheimer.png')}
@@ -56,7 +76,7 @@ const HomeScreen: React.FC = () => {
           name="Johnny Depp"
         />
       </ScrollView>
-    </View>
+    </AppLayout>
   );
 };
 
