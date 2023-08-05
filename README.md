@@ -1,6 +1,17 @@
-<h1 style='text-align: center'> Movie App</h1>
+<h1 align="center"> Movie App</h1>
 
-This project is a movie app built with react native and available for both android and ios devices.
+<p align="center">
+This project is a movie app built with react native and available for both Android and iOS devices.
+</p>
+
+<h2 align="center">
+🤖 Tech Stack
+</h2>
+<p align="center">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/React-Dark.svg" width="48" title="ReactNative">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/TypeScript.svg" width="48" title="Typescript">
+<img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Jest.svg" width="48" title="Unit Test">
+</p>
 
 ## setup and run
 
@@ -31,10 +42,3 @@ npm react-native run-ios
 ```
 
 :o: or you can simply download the apk from my portfolio
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
