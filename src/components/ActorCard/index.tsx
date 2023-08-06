@@ -1,13 +1,18 @@
 import React from 'react';
-import {Image, Text, View} from 'react-native';
-import styles from './styles';
 import Props from './types';
+import styles from './styles';
+import {Image, Text, View} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const ActorCard: React.FC<Props> = ({image, name}) => {
   return (
     <View style={styles.container}>
-      <Image resizeMode="cover" source={image ?? ''} style={styles.image} />
-      <Text style={styles.name}>{name}</Text>
+      <Image resizeMode="cover" source={image} style={styles.image} />
+      <LinearGradient
+        colors={['rgba(0,0,0,0.1)', '#000']}
+        style={styles.linearGradient}>
+        <Text style={styles.name}>{name}</Text>
+      </LinearGradient>
     </View>
   );
 };

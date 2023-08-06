@@ -13,16 +13,20 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 4,
   },
-  name: {
+  linearGradient: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     width: '100%',
+    height: 62,
+    justifyContent: 'flex-end',
+  },
+  name: {
     padding: 6,
+    paddingBottom: 10,
     color: Colors.white,
     fontSize: 12,
     fontWeight: 'bold',
-    backgroundColor: 'rgba(0,0,0,0.5)',
   },
 });
 
