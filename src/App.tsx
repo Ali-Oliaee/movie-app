@@ -1,13 +1,8 @@
 import React from 'react';
-import BottomTab from './navigation/bottom-tab';
-import {NavigationContainer} from '@react-navigation/native';
+import MainNavigator from './navigation';
 
 const App: React.FC = () => {
-  return (
-    <NavigationContainer>
-      <BottomTab />
-    </NavigationContainer>
-  );
+  return <MainNavigator />;
 };
 
 export default App;

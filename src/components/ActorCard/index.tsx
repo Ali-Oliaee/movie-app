@@ -9,7 +9,7 @@ const ActorCard: React.FC<Props> = ({image, name}) => {
     <View style={styles.container}>
       <Image resizeMode="cover" source={image} style={styles.image} />
       <LinearGradient
-        colors={['rgba(0,0,0,0.1)', '#000']}
+        colors={['rgba(0,0,0,0.0)', '#000']}
         style={styles.linearGradient}>
         <Text style={styles.name}>{name}</Text>
       </LinearGradient>

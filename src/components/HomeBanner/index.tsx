@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 import Props from './types';
 import Tag from '../Tag';
@@ -14,11 +14,17 @@ const HomeBanner: React.FC<Props> = ({
   year,
   age,
   rate,
+  onPress,
 }) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      activeOpacity={1}
+      onPress={onPress}>
       <Image resizeMode="cover" source={image ?? ''} style={styles.image} />
-      <LinearGradient colors={['transparent', '#000']} style={styles.content}>
+      <LinearGradient
+        colors={['rgba(0,0,0,0.0)', '#000']}
+        style={styles.content}>
         <View style={styles.header}>
           <Text style={styles.title}>{name}</Text>
           <Text style={styles.kind}>{kind}</Text>
@@ -33,7 +39,7 @@ const HomeBanner: React.FC<Props> = ({
           <Tag title={String(rate ?? '')} isRate />
         </View>
       </LinearGradient>
-    </View>
+    </TouchableOpacity>
   );
 };
 
