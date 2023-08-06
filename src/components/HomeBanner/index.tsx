@@ -22,7 +22,9 @@ const HomeBanner: React.FC<Props> = ({
       activeOpacity={1}
       onPress={onPress}>
       <Image resizeMode="cover" source={image ?? ''} style={styles.image} />
-      <LinearGradient colors={['transparent', '#000']} style={styles.content}>
+      <LinearGradient
+        colors={['rgba(0,0,0,0.0)', '#000']}
+        style={styles.content}>
         <View style={styles.header}>
           <Text style={styles.title}>{name}</Text>
           <Text style={styles.kind}>{kind}</Text>
