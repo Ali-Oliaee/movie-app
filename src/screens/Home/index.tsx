@@ -1,10 +1,11 @@
 import React from 'react';
-import {ScrollView, Text, TouchableOpacity} from 'react-native';
+import {ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import {ActorCard, HomeBanner} from '../../components';
 import AppLayout from '../../layouts/AppLayout';
-import {homeCategory} from '../../utils/genres';
+import {homeCategory, appCategory} from '../../utils/genres';
 import styles from './styles';
 import MovieCard from '../../components/MovieCard';
+import CategoryTag from '../../components/CategoryTag';
 
 const HomeScreen: React.FC = () => {
   const [activeCategory, setActiveCategory] = React.useState<number>(1);
@@ -60,7 +61,7 @@ const HomeScreen: React.FC = () => {
           rate={7.1}
         />
       </ScrollView>
-      <ScrollView horizontal>
+      {/* <ScrollView horizontal>
         <MovieCard
           image={require('../../assets/images/blade-runner.png')}
           name="Blade Runner 2049"
@@ -71,7 +72,18 @@ const HomeScreen: React.FC = () => {
           name="The Revenant"
           kind="Movie"
         />
-      </ScrollView>
+      </ScrollView> */}
+      <View
+        style={{
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+        }}>
+        {appCategory.map(
+          ({id, title, number}) =>
+            id <= 11 && <CategoryTag key={id} title={title} number={number} />,
+        )}
+      </View>
+
       {/* <ScrollView horizontal>
         <ActorCard
           image={require('../../assets/images/dicaprio.png')}
