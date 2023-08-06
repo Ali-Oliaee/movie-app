@@ -1,4 +1,6 @@
+import {ImageProps} from 'react-native';
+
 export default interface Props {
-  image: string;
+  image: ImageProps;
   name: string;
 }
