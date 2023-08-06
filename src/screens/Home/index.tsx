@@ -4,6 +4,7 @@ import {ActorCard, HomeBanner} from '../../components';
 import AppLayout from '../../layouts/AppLayout';
 import {homeCategory} from '../../utils/genres';
 import styles from './styles';
+import MovieCard from '../../components/MovieCard';
 
 const HomeScreen: React.FC = () => {
   const [activeCategory, setActiveCategory] = React.useState<number>(1);
@@ -26,6 +27,7 @@ const HomeScreen: React.FC = () => {
           </TouchableOpacity>
         ))}
       </ScrollView>
+
       <ScrollView horizontal>
         <HomeBanner
           image={require('../../assets/images/oppenheimer.png')}
@@ -59,6 +61,18 @@ const HomeScreen: React.FC = () => {
         />
       </ScrollView>
       <ScrollView horizontal>
+        <MovieCard
+          image={require('../../assets/images/blade-runner.png')}
+          name="Blade Runner 2049"
+          kind="Movie"
+        />
+        <MovieCard
+          image={require('../../assets/images/revenant.png')}
+          name="The Revenant"
+          kind="Movie"
+        />
+      </ScrollView>
+      {/* <ScrollView horizontal>
         <ActorCard
           image={require('../../assets/images/dicaprio.png')}
           name="Leonardo DiCaprio"
@@ -75,7 +89,7 @@ const HomeScreen: React.FC = () => {
           image={require('../../assets/images/johnny-depp.jpg')}
           name="Johnny Depp"
         />
-      </ScrollView>
+      </ScrollView> */}
     </AppLayout>
   );
 };
