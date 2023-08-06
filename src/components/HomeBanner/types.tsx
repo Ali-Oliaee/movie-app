@@ -9,4 +9,5 @@ export default interface Props {
   year: number;
   age: string;
   rate: number;
+  onPress: () => void;
 }

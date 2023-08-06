@@ -1,17 +1,18 @@
 import React from 'react';
-import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
-import {AdsBox, HomeBanner, MovieCard} from '../../components';
-import AppLayout from '../../layouts/AppLayout';
-import {homeCategory} from '../../utils/genres';
+import Props from './types';
 import styles from './styles';
+import {homeCategory} from '../../utils/genres';
+import AppLayout from '../../layouts/AppLayout';
 import RightArrowIcon from '../../assets/icons/right-arrow';
+import {AdsBox, HomeBanner, MovieCard} from '../../components';
+import {ScrollView, Text, TouchableOpacity, View} from 'react-native';
 
-const HomeScreen: React.FC = () => {
+const HomeScreen: React.FC<Props> = ({navigation}) => {
   const [activeCategory, setActiveCategory] = React.useState<number>(1);
 
   return (
     <AppLayout>
-      <ScrollView style={{flex: 1, height: 1000}}>
+      <ScrollView style={{flex: 1}}>
         <ScrollView horizontal style={styles.categoryContainer}>
           {homeCategory.map(({id, title}) => (
             <TouchableOpacity
@@ -38,6 +39,7 @@ const HomeScreen: React.FC = () => {
             year={2023}
             age="+15"
             rate={8.8}
+            onPress={() => navigation.navigate('Movie')}
           />
           <HomeBanner
             image={require('../../assets/images/jung_e.png')}
@@ -48,6 +50,7 @@ const HomeScreen: React.FC = () => {
             year={2023}
             age="+13"
             rate={6.8}
+            onPress={() => navigation.navigate('Movie')}
           />
           <HomeBanner
             image={require('../../assets/images/medellin.jpeg')}
@@ -58,6 +61,7 @@ const HomeScreen: React.FC = () => {
             year={2023}
             age="+18"
             rate={7.1}
+            onPress={() => navigation.navigate('Movie')}
           />
         </ScrollView>
         <AdsBox />

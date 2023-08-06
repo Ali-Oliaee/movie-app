@@ -1,7 +1,7 @@
 import React from 'react';
-import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
-import AppLayout from '../../layouts/AppLayout';
 import styles from './styles';
+import AppLayout from '../../layouts/AppLayout';
+import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 
 const ProfileScreen: React.FC = () => {
   return (
