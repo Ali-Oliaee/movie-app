@@ -1,10 +1,10 @@
 import React from 'react';
 import Props from './types';
 import styles from './styles';
-import {homeCategory} from '../../utils/genres';
-import AppLayout from '../../layouts/AppLayout';
-import RightArrowIcon from '../../assets/icons/right-arrow';
-import {AdsBox, HomeBanner, MovieCard} from '../../components';
+import {homeCategory} from '@utils/genres';
+import AppLayout from '@layouts/AppLayout';
+import RightArrowIcon from '@assets/icons/right-arrow';
+import {AdsBox, HomeBanner, MovieCard} from '@components';
 import {ScrollView, Text, TouchableOpacity, View} from 'react-native';
 
 const HomeScreen: React.FC<Props> = ({navigation}) => {
@@ -31,7 +31,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
         </ScrollView>
         <ScrollView horizontal>
           <HomeBanner
-            image={require('../../assets/images/oppenheimer.png')}
+            image={require('@assets/images/oppenheimer.png')}
             name="Oppenheimer"
             kind="Movie"
             description="J. Robert Oppenheimer led a team of scientists on the Manhattan World War II, resulting in the world's the first nuclear explosion on July 16, 1945."
@@ -42,7 +42,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
             onPress={() => navigation.navigate('Movie')}
           />
           <HomeBanner
-            image={require('../../assets/images/jung_e.png')}
+            image={require('@assets/images/jung_e.png')}
             name="Jung_E"
             kind="Movie"
             description="This riveting sci-fi action-drama from “Hellbound” director Yeon Sang-ho stars Kang Soo-youn, Kim Hyun-joo and Ryu Kyung-soo."
@@ -53,7 +53,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
             onPress={() => navigation.navigate('Movie')}
           />
           <HomeBanner
-            image={require('../../assets/images/medellin.jpeg')}
+            image={require('@assets/images/medellin.jpeg')}
             name="Medellin"
             kind="Movie"
             description="In order to save his younger brother from the hands of narcos, Reda gathers a team to raid the kidnappers in Medellín, Colombia."
@@ -75,17 +75,17 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
           </View>
           <ScrollView horizontal>
             <MovieCard
-              image={require('../../assets/images/medellin.jpeg')}
+              image={require('@assets/images/medellin.jpeg')}
               name="Medellin"
               kind="Movie"
             />
             <MovieCard
-              image={require('../../assets/images/blade-runner.png')}
+              image={require('@assets/images/blade-runner.png')}
               name="Blade Runner"
               kind="Movie"
             />
             <MovieCard
-              image={require('../../assets/images/jung_e.png')}
+              image={require('@assets/images/jung_e.png')}
               name="Jung_E"
               kind="Movie"
             />

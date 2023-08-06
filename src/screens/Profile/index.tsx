@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles';
-import AppLayout from '../../layouts/AppLayout';
+import AppLayout from '@layouts/AppLayout';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 
 const ProfileScreen: React.FC = () => {
@@ -12,7 +12,7 @@ const ProfileScreen: React.FC = () => {
         <View style={styles.header}>
           <Image
             style={styles.headerImage}
-            source={require('../../assets/images/logo.jpeg')}
+            source={require('@assets/images/logo.jpeg')}
           />
         </View>
         <View style={styles.body}>
