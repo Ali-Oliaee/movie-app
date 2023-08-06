@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: 10,
     backgroundColor: 'rgba(0,0,0,0.2)',
+    minHeight: 170,
   },
   header: {
     flexDirection: 'row',
