@@ -18,6 +18,29 @@ const styles = StyleSheet.create({
   categoryItemTextActive: {
     color: Colors.white,
   },
+  forYouBox: {
+    marginHorizontal: 12,
+    marginTop: 20,
+  },
+  forYouBoxHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+  forYouBoxHeaderText: {
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  forYouBoxHeaderLinkContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  forYouBoxHeaderLink: {
+    fontSize: 12,
+    color: Colors.white,
+    marginRight: 6,
+  },
 });
 
 export default styles;

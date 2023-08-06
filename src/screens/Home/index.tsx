@@ -1,9 +1,10 @@
 import React from 'react';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
-import {AdsBox, HomeBanner} from '../../components';
+import {AdsBox, HomeBanner, MovieCard} from '../../components';
 import AppLayout from '../../layouts/AppLayout';
 import {homeCategory} from '../../utils/genres';
 import styles from './styles';
+import RightArrowIcon from '../../assets/icons/right-arrow';
 
 const HomeScreen: React.FC = () => {
   const [activeCategory, setActiveCategory] = React.useState<number>(1);
@@ -60,6 +61,32 @@ const HomeScreen: React.FC = () => {
           />
         </ScrollView>
         <AdsBox />
+        <View style={styles.forYouBox}>
+          <View style={styles.forYouBoxHeader}>
+            <Text style={styles.forYouBoxHeaderText}>For You</Text>
+            <TouchableOpacity style={styles.forYouBoxHeaderLinkContainer}>
+              <Text style={styles.forYouBoxHeaderLink}>See All</Text>
+              <RightArrowIcon />
+            </TouchableOpacity>
+          </View>
+          <ScrollView horizontal>
+            <MovieCard
+              image={require('../../assets/images/medellin.jpeg')}
+              name="Medellin"
+              kind="Movie"
+            />
+            <MovieCard
+              image={require('../../assets/images/blade-runner.png')}
+              name="Blade Runner"
+              kind="Movie"
+            />
+            <MovieCard
+              image={require('../../assets/images/jung_e.png')}
+              name="Jung_E"
+              kind="Movie"
+            />
+          </ScrollView>
+        </View>
       </ScrollView>
     </AppLayout>
   );
