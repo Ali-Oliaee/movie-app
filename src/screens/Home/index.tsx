@@ -6,9 +6,12 @@ import {homeCategory, appCategory} from '../../utils/genres';
 import styles from './styles';
 import MovieCard from '../../components/MovieCard';
 import CategoryTag from '../../components/CategoryTag';
+import SearchIconFilled from '../../assets/icons/searchIconFilled';
+import SearchInput from '../../components/SearchInput';
 
 const HomeScreen: React.FC = () => {
   const [activeCategory, setActiveCategory] = React.useState<number>(1);
+  const [searchKey, setSearchKey] = React.useState<string>('');
 
   return (
     <AppLayout>
@@ -73,6 +76,7 @@ const HomeScreen: React.FC = () => {
           kind="Movie"
         />
       </ScrollView> */}
+      <SearchInput value={searchKey} onChange={setSearchKey} />
       <View
         style={{
           flexDirection: 'row',
