@@ -1,5 +1,5 @@
 import React from 'react';
-import {HomeScreen} from '../screens';
+import {HomeScreen, ProfileScreen} from '../screens';
 import {Colors} from '../theme/colors';
 import styles from './bottom-tab-styles';
 import HomeIcon from '../assets/icons/homeIcon';
@@ -93,7 +93,7 @@ const BottomTab: React.FC = () => {
       <Tab.Screen name="Category" component={HomeScreen} />
       <Tab.Screen name="Search" component={HomeScreen} />
       <Tab.Screen name="Likes" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={HomeScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
 };
