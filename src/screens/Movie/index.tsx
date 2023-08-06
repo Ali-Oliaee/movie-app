@@ -9,16 +9,15 @@ import {
 import React from 'react';
 import Props from './types';
 import styles from './styles';
-import AppLayout from '../../layouts/AppLayout';
+import AppLayout from '@layouts/AppLayout';
 import LinearGradient from 'react-native-linear-gradient';
-import RightArrowIcon from '../../assets/icons/right-arrow';
-import LikeIcon from '../../assets/icons/like';
-import {ActorCard, Tag} from '../../components';
-import PlayIcon from '../../assets/icons/play';
-import CheckIcon from '../../assets/icons/check';
-import CancelIcon from '../../assets/icons/cancel';
-import BellIcon from '../../assets/icons/bell';
-import SeriesCard from '../../components/SeriesCard';
+import RightArrowIcon from '@assets/icons/right-arrow';
+import LikeIcon from '@assets/icons/like';
+import {ActorCard, Tag, SeriesCard} from '@components';
+import PlayIcon from '@assets/icons/play';
+import CheckIcon from '@assets/icons/check';
+import CancelIcon from '@assets/icons/cancel';
+import BellIcon from '@assets/icons/bell';
 
 const MovieScreen: React.FC<Props> = ({navigation}) => {
   return (
@@ -41,7 +40,7 @@ const MovieScreen: React.FC<Props> = ({navigation}) => {
             style={styles.linearGradientTop}
           />
           <Image
-            source={require('../../assets/images/silo.png')}
+            source={require('@assets/images/silo.png')}
             style={styles.banner}
           />
           <View style={styles.bannerContent}>
@@ -110,19 +109,19 @@ const MovieScreen: React.FC<Props> = ({navigation}) => {
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <SeriesCard
               name="Season 1 - Episode 1"
-              image={require('../../assets/images/dicaprio.png')}
+              image={require('@assets/images/dicaprio.png')}
               time="43 min"
               isChecked
             />
             <SeriesCard
               name="Season 1 - Episode 2"
-              image={require('../../assets/images/dicaprio.png')}
+              image={require('@assets/images/dicaprio.png')}
               time="50 min"
               isChecked
             />
             <SeriesCard
               name="Season 1 - Episode 3"
-              image={require('../../assets/images/dicaprio.png')}
+              image={require('@assets/images/dicaprio.png')}
               time="39 min"
               isChecked
             />
@@ -139,19 +138,19 @@ const MovieScreen: React.FC<Props> = ({navigation}) => {
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <ActorCard
               name="Leonardo DiCaprio"
-              image={require('../../assets/images/dicaprio.png')}
+              image={require('@assets/images/dicaprio.png')}
             />
             <ActorCard
               name="Scarlett Johansson"
-              image={require('../../assets/images/scarlett-johansson.png')}
+              image={require('@assets/images/scarlett-johansson.png')}
             />
             <ActorCard
               name="George Clooney"
-              image={require('../../assets/images/george-clooney.png')}
+              image={require('@assets/images/george-clooney.png')}
             />
             <ActorCard
               name="Johnny Depp"
-              image={require('../../assets/images/johnny-depp.jpg')}
+              image={require('@assets/images/johnny-depp.jpg')}
             />
           </ScrollView>
         </View>

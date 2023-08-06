@@ -5,3 +5,4 @@ export {default as MovieCard} from './MovieCard';
 export {default as CategoryTag} from './CategoryTag';
 export {default as SearchInput} from './SearchInput';
 export {default as AdsBox} from './AdsBox';
+export {default as SeriesCard} from './SeriesCard';
