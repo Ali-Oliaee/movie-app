@@ -1,5 +1,5 @@
 import React from 'react';
-import {HomeScreen} from '../screens';
+import {HomeScreen, ProfileScreen} from '../screens';
 import {Colors} from '../theme/colors';
 import styles from './bottom-tab-styles';
 import HomeIcon from '../assets/icons/homeIcon';
@@ -13,6 +13,7 @@ import HeartIconFilled from '../assets/icons/heartIconFilled';
 import ProfileIconFilled from '../assets/icons/profileIconFilled';
 import CategoryIconFilled from '../assets/icons/categoryIconFilled';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import RightArrowIcon from '../assets/icons/right-arrow';
 
 const Tab = createBottomTabNavigator();
 
@@ -63,7 +64,7 @@ const BottomTab: React.FC = () => {
 
   return (
     <Tab.Navigator
-      screenOptions={screenOptions}
+      screenOptions={screenOptions as any}
       tabBar={props => {
         if (props.state.index !== 1) {
           return (
@@ -93,7 +94,35 @@ const BottomTab: React.FC = () => {
       <Tab.Screen name="Category" component={HomeScreen} />
       <Tab.Screen name="Search" component={HomeScreen} />
       <Tab.Screen name="Likes" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={HomeScreen} />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={props => ({
+          headerShown: true,
+          headerTitle: 'Profile',
+          headerTitleStyle: {
+            color: Colors.white,
+            fontSize: 22,
+            marginTop: 2,
+          },
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: Colors.backgroundColor,
+            shadowColor: 'transparent',
+          },
+          headerLeft: () => (
+            <TouchableOpacity>
+              <RightArrowIcon
+                onPress={props.navigation.goBack}
+                style={{
+                  transform: [{rotate: '180deg'}, {scale: 2}],
+                  marginLeft: 20,
+                }}
+              />
+            </TouchableOpacity>
+          ),
+        })}
+      />
     </Tab.Navigator>
   );
 };
