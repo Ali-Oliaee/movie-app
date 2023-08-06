@@ -4,8 +4,8 @@ import {Colors} from '../../theme/colors';
 const styles = StyleSheet.create({
   container: {
     position: 'relative',
-    width: 120,
-    height: 180,
+    width: 140,
+    height: 220,
     marginEnd: 8,
   },
   image: {
@@ -22,11 +22,16 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   name: {
-    padding: 6,
-    paddingBottom: 10,
+    paddingStart: 6,
     color: Colors.white,
     fontSize: 12,
     fontWeight: 'bold',
+  },
+  kind: {
+    paddingStart: 6,
+    color: Colors.white,
+    paddingBottom: 10,
+    fontSize: 10,
   },
 });
 

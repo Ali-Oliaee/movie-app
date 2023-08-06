@@ -4,7 +4,7 @@ import styles from './styles';
 import {Image, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-const ActorCard: React.FC<Props> = ({image, name}) => {
+const MovieCard: React.FC<Props> = ({image, name, kind}) => {
   return (
     <View style={styles.container}>
       <Image resizeMode="cover" source={image} style={styles.image} />
@@ -12,9 +12,10 @@ const ActorCard: React.FC<Props> = ({image, name}) => {
         colors={['rgba(0,0,0,0.1)', '#000']}
         style={styles.linearGradient}>
         <Text style={styles.name}>{name}</Text>
+        <Text style={styles.kind}>{kind}</Text>
       </LinearGradient>
     </View>
   );
 };
 
-export default ActorCard;
+export default MovieCard;

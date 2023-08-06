@@ -3,6 +3,7 @@ import {Image, Text, View} from 'react-native';
 import styles from './styles';
 import Props from './types';
 import Tag from '../Tag';
+import LinearGradient from 'react-native-linear-gradient';
 
 const HomeBanner: React.FC<Props> = ({
   image,
@@ -17,7 +18,7 @@ const HomeBanner: React.FC<Props> = ({
   return (
     <View style={styles.container}>
       <Image resizeMode="cover" source={image ?? ''} style={styles.image} />
-      <View style={styles.content}>
+      <LinearGradient colors={['transparent', '#000']} style={styles.content}>
         <View style={styles.header}>
           <Text style={styles.title}>{name}</Text>
           <Text style={styles.kind}>{kind}</Text>
@@ -31,7 +32,7 @@ const HomeBanner: React.FC<Props> = ({
           <Tag title={age ?? ''} />
           <Tag title={String(rate ?? '')} isRate />
         </View>
-      </View>
+      </LinearGradient>
     </View>
   );
 };
