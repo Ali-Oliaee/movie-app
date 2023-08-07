@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from '../../theme/colors';
+import {Fonts} from '../../theme/fonts';
 
 const styles = StyleSheet.create({
   categoryContainer: {
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
   categoryItemText: {
     color: 'rgba(255, 255, 255, 0.7)',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: Fonts.bold,
   },
   categoryItemTextActive: {
     color: Colors.white,
