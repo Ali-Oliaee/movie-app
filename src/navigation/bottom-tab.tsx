@@ -1,19 +1,20 @@
 import React from 'react';
-import {HomeScreen, ProfileScreen} from '../screens';
 import {Colors} from '../theme/colors';
 import styles from './bottom-tab-styles';
+import SearchScreen from '@screens/Search';
 import HomeIcon from '../assets/icons/homeIcon';
 import HeartIcon from '../assets/icons/heartIcon';
 import SearchIcon from '../assets/icons/searchIcon';
 import {TouchableOpacity, View} from 'react-native';
+import {HomeScreen, ProfileScreen} from '../screens';
 import ProfileIcon from '../assets/icons/profileIcon';
 import CategoryIcon from '../assets/icons/categoryIcon';
+import RightArrowIcon from '../assets/icons/right-arrow';
 import HomeIconFilled from '../assets/icons/homeIconFilled';
 import HeartIconFilled from '../assets/icons/heartIconFilled';
 import ProfileIconFilled from '../assets/icons/profileIconFilled';
 import CategoryIconFilled from '../assets/icons/categoryIconFilled';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import RightArrowIcon from '../assets/icons/right-arrow';
 
 const Tab = createBottomTabNavigator();
 
@@ -92,7 +93,7 @@ const BottomTab: React.FC = () => {
       }}>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Category" component={HomeScreen} />
-      <Tab.Screen name="Search" component={HomeScreen} />
+      <Tab.Screen name="Search" component={SearchScreen} />
       <Tab.Screen name="Likes" component={HomeScreen} />
       <Tab.Screen
         name="Profile"
