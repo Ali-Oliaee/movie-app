@@ -38,6 +38,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
             genres={['Thriller', 'Drama']}
             year={2023}
             age="+15"
+            isLiked
             rate={8.8}
             onPress={() => navigation.navigate('Movie')}
           />
