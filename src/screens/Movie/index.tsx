@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import Props from './types';
 import styles from './styles';
 import AppLayout from '@layouts/AppLayout';
@@ -18,8 +18,11 @@ import PlayIcon from '@assets/icons/play';
 import CheckIcon from '@assets/icons/check';
 import CancelIcon from '@assets/icons/cancel';
 import BellIcon from '@assets/icons/bell';
+import HeartFilledIcon from '@assets/icons/heartFilled';
 
 const MovieScreen: React.FC<Props> = ({navigation}) => {
+  const [isLiked, setIsLiked] = useState<boolean>(false);
+
   return (
     <AppLayout>
       <StatusBar
@@ -31,8 +34,18 @@ const MovieScreen: React.FC<Props> = ({navigation}) => {
         <TouchableOpacity style={styles.backButton} onPress={navigation.goBack}>
           <RightArrowIcon />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.likeButton}>
-          <LikeIcon />
+        <TouchableOpacity
+          style={styles.likeButton}
+          onPress={() => setIsLiked(!isLiked)}>
+          {isLiked ? (
+            <HeartFilledIcon
+              style={{
+                transform: [{scale: 1.3}],
+              }}
+            />
+          ) : (
+            <LikeIcon />
+          )}
         </TouchableOpacity>
         <View style={styles.bannerContainer}>
           <LinearGradient
