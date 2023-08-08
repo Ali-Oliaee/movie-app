@@ -8,6 +8,18 @@ const styles = StyleSheet.create({
     height: 480,
     marginHorizontal: 10,
   },
+  likeButton: {
+    position: 'absolute',
+    zIndex: 99,
+    right: 12,
+    top: 12,
+    backgroundColor: 'rgba(257,257,257,0.5)',
+    borderRadius: 8,
+    width: 38,
+    height: 38,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   image: {
     width: '100%',
     height: '100%',

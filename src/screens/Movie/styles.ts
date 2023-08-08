@@ -17,6 +17,10 @@ const styles = StyleSheet.create({
     top: 60,
     right: 20,
     zIndex: 20,
+    width: 30,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   bannerContainer: {
     height: 500,
