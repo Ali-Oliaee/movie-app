@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles';
 import AppLayout from '@layouts/AppLayout';
-import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import {Image, ScrollView, Text, View} from 'react-native';
 
 const ProfileScreen: React.FC = () => {
   return (
@@ -33,9 +33,6 @@ const ProfileScreen: React.FC = () => {
             <Text style={styles.value}>Mashhad, Iran</Text>
           </View>
         </View>
-        <TouchableOpacity style={styles.button} activeOpacity={0.7}>
-          <Text style={styles.buttonText}>It's a surprise! :)</Text>
-        </TouchableOpacity>
       </ScrollView>
     </AppLayout>
   );

@@ -25,14 +25,19 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 10,
   },
-  content: {
+  gradient: {
     position: 'absolute',
     bottom: 0,
     left: 0,
+    height: '100%',
     width: '100%',
-    padding: 10,
-    backgroundColor: 'rgba(0,0,0,0.2)',
-    minHeight: 170,
+    justifyContent: 'flex-end',
+    zIndex: 99,
+  },
+  content: {
+    paddingVertical: 8,
+    minHeight: 130,
+    justifyContent: 'flex-end',
   },
   header: {
     flexDirection: 'row',
@@ -42,6 +47,7 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontSize: 16,
     fontWeight: 'bold',
+    paddingHorizontal: 8,
   },
   kind: {
     color: Colors.white,
@@ -53,11 +59,13 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontSize: 12,
     marginVertical: 4,
+    paddingHorizontal: 8,
   },
   tagsContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     flexWrap: 'wrap',
+    paddingStart: 8,
   },
 });
 

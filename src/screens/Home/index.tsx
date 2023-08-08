@@ -31,18 +31,6 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
         </ScrollView>
         <ScrollView horizontal>
           <HomeBanner
-            image={require('@assets/images/oppenheimer.png')}
-            name="Oppenheimer"
-            kind="Movie"
-            description="J. Robert Oppenheimer led a team of scientists on the Manhattan World War II, resulting in the world's the first nuclear explosion on July 16, 1945."
-            genres={['Thriller', 'Drama']}
-            year={2023}
-            age="+15"
-            isLiked
-            rate={8.8}
-            onPress={() => navigation.navigate('Movie')}
-          />
-          <HomeBanner
             image={require('@assets/images/jung_e.png')}
             name="Jung_E"
             kind="Movie"
@@ -51,6 +39,18 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
             year={2023}
             age="+13"
             rate={6.8}
+            onPress={() => navigation.navigate('Movie')}
+          />
+          <HomeBanner
+            image={require('@assets/images/oppenheimer.png')}
+            name="Oppenheimer"
+            kind="Movie"
+            description="J. Robert Oppenheimer led a team of scientists on the Manhattan World War II, resulting in the world's the first nuclear explosion."
+            genres={['Thriller', 'Drama']}
+            year={2023}
+            age="+15"
+            isLiked
+            rate={8.8}
             onPress={() => navigation.navigate('Movie')}
           />
           <HomeBanner
