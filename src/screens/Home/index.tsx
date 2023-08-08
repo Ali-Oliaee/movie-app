@@ -31,6 +31,17 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
         </ScrollView>
         <ScrollView horizontal>
           <HomeBanner
+            image={require('@assets/images/jung_e.png')}
+            name="Jung_E"
+            kind="Movie"
+            description="This riveting sci-fi action-drama from “Hellbound” director Yeon Sang-ho stars Kang Soo-youn, Kim Hyun-joo and Ryu Kyung-soo."
+            genres={['Action', 'Sci-fi']}
+            year={2023}
+            age="+13"
+            rate={6.8}
+            onPress={() => navigation.navigate('Movie')}
+          />
+          <HomeBanner
             image={require('@assets/images/oppenheimer.png')}
             name="Oppenheimer"
             kind="Movie"
@@ -40,17 +51,6 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
             age="+15"
             isLiked
             rate={8.8}
-            onPress={() => navigation.navigate('Movie')}
-          />
-          <HomeBanner
-            image={require('@assets/images/jung_e.png')}
-            name="Jung_E"
-            kind="Movie"
-            description="This riveting sci-fi action-drama from “Hellbound” director Yeon Sang-ho stars Kang Soo-youn, Kim Hyun-joo and Ryu Kyung-soo."
-            genres={['Action', 'Sci-fi']}
-            year={2023}
-            age="+13"
-            rate={6.8}
             onPress={() => navigation.navigate('Movie')}
           />
           <HomeBanner
