@@ -37,20 +37,6 @@ const styles = StyleSheet.create({
     color: Colors.white,
     paddingVertical: 5,
   },
-  button: {
-    alignSelf: 'center',
-    marginBottom: 20,
-    borderWidth: 1,
-    width: '70%',
-    borderRadius: 8,
-    padding: 12,
-    borderColor: 'rgba(257,257,257,0.7)',
-  },
-  buttonText: {
-    textAlign: 'center',
-    fontSize: 16,
-    color: Colors.white,
-  },
 });
 
 export default styles;

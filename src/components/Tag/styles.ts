@@ -17,8 +17,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: Colors.white,
-    fontSize: 12,
-    fontWeight: 'bold',
+    fontSize: 10,
   },
   rateIcon: {
     marginStart: 8,

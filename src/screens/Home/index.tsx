@@ -45,7 +45,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
             image={require('@assets/images/oppenheimer.png')}
             name="Oppenheimer"
             kind="Movie"
-            description="J. Robert Oppenheimer led a team of scientists on the Manhattan World War II, resulting in the world's the first nuclear explosion on July 16, 1945."
+            description="J. Robert Oppenheimer led a team of scientists on the Manhattan World War II, resulting in the world's the first nuclear explosion."
             genres={['Thriller', 'Drama']}
             year={2023}
             age="+15"

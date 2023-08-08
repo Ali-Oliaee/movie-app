@@ -41,20 +41,22 @@ const HomeBanner: React.FC<Props> = ({
       </TouchableOpacity>
       <Image resizeMode="cover" source={image ?? ''} style={styles.image} />
       <LinearGradient
-        colors={['rgba(0,0,0,0.0)', '#000']}
-        style={styles.content}>
-        <View style={styles.header}>
-          <Text style={styles.title}>{name}</Text>
-          <Text style={styles.kind}>{kind}</Text>
-        </View>
-        <Text style={styles.description}>{description}</Text>
-        <View style={styles.tagsContainer}>
-          {genres?.map((genre, index) => (
-            <Tag key={index} title={genre} />
-          ))}
-          <Tag title={String(year ?? '')} />
-          <Tag title={age ?? ''} />
-          <Tag title={String(rate ?? '')} isRate />
+        colors={['rgba(0,0,0,0.0)', 'rgba(0,0,0,0.8)']}
+        style={styles.gradient}>
+        <View style={styles.content}>
+          <View style={styles.header}>
+            <Text style={styles.title}>{name}</Text>
+            <Text style={styles.kind}>{kind}</Text>
+          </View>
+          <Text style={styles.description}>{description}</Text>
+          <View style={styles.tagsContainer}>
+            {genres?.map((genre, index) => (
+              <Tag key={index} title={genre} />
+            ))}
+            <Tag title={String(year ?? '')} />
+            <Tag title={age ?? ''} />
+            <Tag title={String(rate ?? '')} isRate />
+          </View>
         </View>
       </LinearGradient>
     </TouchableOpacity>
