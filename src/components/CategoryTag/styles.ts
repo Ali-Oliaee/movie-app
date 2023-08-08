@@ -4,7 +4,8 @@ import {Colors} from '../../theme/colors';
 const styles = StyleSheet.create({
   container: {
     padding: 8,
-    backgroundColor: 'rgba(257,257,257,0.1)',
+    paddingVertical: 6,
+    backgroundColor: 'rgba(257,257,257,0.1))',
     borderRadius: 4,
     marginEnd: 10,
     marginBottom: 10,
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   number: {
-    marginStart: 8,
+    marginStart: 12,
     color: 'rgba(255,255,255,0.6)',
     fontSize: 12,
   },
