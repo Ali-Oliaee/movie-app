@@ -11,7 +11,9 @@ const styles = StyleSheet.create({
     marginBottom: 6,
     flexDirection: 'row',
     alignItems: 'center',
-    height: 46,
+    justifyContent: 'center',
+    height: 40,
+    flex: 1,
   },
   icon: {
     marginEnd: 8,
@@ -20,6 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     color: Colors.white,
     fontSize: 16,
+    height: 40,
   },
 });
 
