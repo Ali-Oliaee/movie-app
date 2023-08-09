@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
   likeButton: {
     position: 'absolute',
-    zIndex: 99,
+    zIndex: 9999,
     right: 12,
     top: 12,
     backgroundColor: 'rgba(257,257,257,0.5)',
