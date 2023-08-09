@@ -8,6 +8,7 @@ import SearchIcon from '../assets/icons/searchIcon';
 import {TouchableOpacity, View} from 'react-native';
 import {HomeScreen, ProfileScreen} from '../screens';
 import ProfileIcon from '../assets/icons/profileIcon';
+import {BlurView} from '@react-native-community/blur';
 import CategoryIcon from '../assets/icons/categoryIcon';
 import RightArrowIcon from '../assets/icons/right-arrow';
 import HomeIconFilled from '../assets/icons/homeIconFilled';
@@ -70,6 +71,12 @@ const BottomTab: React.FC = () => {
         if (props.state.index !== 1) {
           return (
             <View style={styles.container}>
+              <BlurView
+                style={styles.blurView}
+                blurType="dark"
+                blurAmount={70}
+                overlayColor="transparent"
+              />
               {[...Array(5)].map((el, index) => (
                 <TouchableOpacity
                   key={`${index}route`}
