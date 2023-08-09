@@ -1,10 +1,13 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 import {Colors} from '../../theme/colors';
 import {Fonts} from '../../theme/fonts';
 
 const styles = StyleSheet.create({
   categoryContainer: {
-    marginTop: 30,
+    marginTop: Platform.select({
+      android: 30,
+      ios: 60,
+    }),
     marginBottom: 20,
   },
   categoryItem: {
