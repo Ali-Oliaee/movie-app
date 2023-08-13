@@ -41,7 +41,7 @@ export const movies = {
       name: 'Barbie',
       kind: 'Movie',
       description:
-        'Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land.',
+        'Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. Barbie and Ken are having the time of their lives in the colorful',
       genres: ['Fantasy', 'Comedy'],
       year: 2023,
       age: '+12',
@@ -91,7 +91,7 @@ export const movies = {
       name: 'Barbie',
       kind: 'Movie',
       description:
-        'Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land.',
+        'Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. Barbie and Ken are having the time of their lives in the colorful',
       genres: ['Fantasy', 'Comedy'],
       year: 2023,
       age: '+12',
@@ -116,7 +116,7 @@ export const movies = {
       name: 'Breaking Bad',
       kind: 'Series',
       description:
-        'Breaking Bad is an American crime drama television series created and produced by Vince Gilligan for AMC.',
+        'Breaking Bad is an American crime drama television series created and produced by Vince Gilligan for AMC. Breaking Bad is an American crime drama television series',
       genres: ['Family', 'Drama'],
       year: 2012,
       age: '+18',

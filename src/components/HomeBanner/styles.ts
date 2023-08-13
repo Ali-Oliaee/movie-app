@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingVertical: 8,
-    minHeight: 130,
-    justifyContent: 'flex-end',
+    minHeight: 110,
+    justifyContent: 'space-between',
   },
   header: {
     flexDirection: 'row',
