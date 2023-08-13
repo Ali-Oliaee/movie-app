@@ -5,7 +5,7 @@ import styles from './styles';
 import {homeCategory} from '@utils/genres';
 import AppLayout from '@layouts/AppLayout';
 import RightArrowIcon from '@assets/icons/right-arrow';
-import {AdsBox, HomeBanner, MovieCard} from '@components';
+import {AdsBox, HomeBanner, MovieCard} from '@components/index';
 import {ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import {movies} from '@utils/movies';
 
@@ -16,7 +16,10 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
   return (
     <AppLayout>
       <ScrollView style={{flex: 1}} showsVerticalScrollIndicator={false}>
-        <ScrollView horizontal style={styles.categoryContainer}>
+        <ScrollView
+          horizontal
+          style={styles.categoryContainer}
+          showsHorizontalScrollIndicator={false}>
           {homeCategory.map(({id, title}) => (
             <TouchableOpacity
               key={id}
@@ -32,7 +35,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
             </TouchableOpacity>
           ))}
         </ScrollView>
-        <ScrollView horizontal>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           {movies[activeCategory].map((props: BannerProps, index: number) => (
             <HomeBanner
               key={index}
@@ -50,7 +53,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
               <RightArrowIcon />
             </TouchableOpacity>
           </View>
-          <ScrollView horizontal>
+          <ScrollView horizontal showsVerticalScrollIndicator={false}>
             <MovieCard
               image={require('@assets/images/medellin.jpeg')}
               name="Medellin"
