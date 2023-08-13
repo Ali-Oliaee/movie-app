@@ -79,6 +79,7 @@ const BottomTab: React.FC = () => {
               />
               {[...Array(5)].map((el, index) => (
                 <TouchableOpacity
+                  activeOpacity={1}
                   key={`${index}route`}
                   style={styles.tabButton}
                   disabled={

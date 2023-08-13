@@ -4,10 +4,10 @@ import {Colors} from '../../theme/colors';
 const styles = StyleSheet.create({
   container: {
     paddingVertical: 2,
-    paddingHorizontal: 8,
+    paddingHorizontal: 6,
     backgroundColor: 'rgba(257,257,257,0.2)',
     borderRadius: 4,
-    marginEnd: 10,
+    marginEnd: 6,
     marginBottom: 6,
     flexDirection: 'row',
     alignItems: 'center',
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
   },
   rateIcon: {
-    marginStart: 8,
+    marginStart: 6,
   },
 });
 

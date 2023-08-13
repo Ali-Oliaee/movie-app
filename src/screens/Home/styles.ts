@@ -5,7 +5,7 @@ import {Fonts} from '../../theme/fonts';
 const styles = StyleSheet.create({
   categoryContainer: {
     marginTop: Platform.select({
-      android: 30,
+      android: 40,
       ios: 60,
     }),
     marginBottom: 20,
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   categoryItemText: {
     color: 'rgba(255, 255, 255, 0.7)',
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: Fonts.bold,
   },
   categoryItemTextActive: {

@@ -6,18 +6,17 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import Props from './types';
 import styles from './styles';
 import AppLayout from '@layouts/AppLayout';
 import RightArrowIcon from '@assets/icons/right-arrow';
-import {ActorCard} from '@components';
+import {ActorCard} from '@components/index';
 import SearchInput from '@components/SearchInput';
 import FilterIcon from '@assets/icons/filterIcon';
 import MovieCard from '@components/MovieCard';
 import {appCategory} from '@utils/genres';
 import CategoryTag from '@components/CategoryTag';
 
-const SearchScreen: React.FC<Props> = ({navigation}) => {
+const SearchScreen: React.FC = () => {
   const [searchKey, setSearchKey] = React.useState<string>('');
 
   return (
