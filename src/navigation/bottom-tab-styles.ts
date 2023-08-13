@@ -18,18 +18,19 @@ const styles = StyleSheet.create({
     }),
     bottom: 0,
     backgroundColor: 'rgba(0,0,0,0.8)',
-    borderTopColor: 'red',
-    borderTopWidth: 4,
   },
   tabButton: {
     width: '20%',
     height: Platform.select({
-      android: 90,
-      ios: 130,
+      android: 133,
+      ios: 170,
     }),
     position: 'relative',
     zIndex: 99999,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255,255,255,0.3)',
     alignItems: 'center',
+    paddingTop: 20,
   },
 });
 
