@@ -41,4 +41,4 @@ ios:
 npm react-native run-ios
 ```
 
-:o: or you can simply download the apk from my portfolio
+:o: or you can simply download the apk from my [portfolio](https://ali-oliaee.ir/)
