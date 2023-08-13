@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   categoryItemText: {
     color: 'rgba(255, 255, 255, 0.7)',
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: Fonts.bold,
   },
   categoryItemTextActive: {
