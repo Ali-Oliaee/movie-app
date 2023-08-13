@@ -13,7 +13,7 @@ import AppLayout from '@layouts/AppLayout';
 import LinearGradient from 'react-native-linear-gradient';
 import RightArrowIcon from '@assets/icons/right-arrow';
 import LikeIcon from '@assets/icons/like';
-import {ActorCard, Tag, SeriesCard} from '@components';
+import {ActorCard, Tag, SeriesCard} from '@components/index';
 import PlayIcon from '@assets/icons/play';
 import CheckIcon from '@assets/icons/check';
 import CancelIcon from '@assets/icons/cancel';
