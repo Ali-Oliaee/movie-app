@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
   bannerTitle: {
     color: Colors.white,
-    fontSize: 17,
+    fontSize: 14,
     fontWeight: 'bold',
   },
   bannerTags: {
@@ -68,18 +68,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: Colors.white,
-    padding: 12,
+    padding: 10,
     borderRadius: 8,
     marginTop: 8,
   },
   playButtonIcon: {
-    transform: [{scale: 1.4}],
+    transform: [{scale: 1.2}],
     resizeMode: 'contain',
     marginRight: 6,
   },
   playButtonText: {
     color: Colors.black,
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: 'bold',
     textAlign: 'center',
   },
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
   description: {
     color: Colors.white,
     marginHorizontal: 12,
-    fontSize: 14,
+    fontSize: 12,
   },
   castContainer: {
     marginHorizontal: 12,

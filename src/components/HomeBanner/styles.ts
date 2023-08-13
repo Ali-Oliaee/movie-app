@@ -52,12 +52,12 @@ const styles = StyleSheet.create({
   kind: {
     color: Colors.white,
     fontSize: 10,
-    marginStart: 10,
+    marginStart: 4,
     marginTop: 2,
   },
   description: {
     color: Colors.white,
-    fontSize: 12,
+    fontSize: 10,
     marginVertical: 4,
     paddingHorizontal: 8,
   },

@@ -3,9 +3,9 @@ import {Colors} from '../../theme/colors';
 
 const styles = StyleSheet.create({
   adsContainer: {
-    marginTop: 30,
+    marginTop: 40,
     width: '100%',
-    height: 104,
+    height: 100,
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
     position: 'relative',
     overflow: 'hidden',
@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
     height: '100%',
     lineHeight: 20,
     color: Colors.white,
-    fontSize: 12,
-    top: 8,
+    fontSize: 10,
+    top: 16,
     left: 8,
     fontWeight: 'bold',
     zIndex: 3,
