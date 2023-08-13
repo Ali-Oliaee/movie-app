@@ -65,7 +65,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
               kind="Movie"
             />
             <MovieCard
-              image={require('@assets/images/jung_e.png')}
+              image={require('@assets/images/junge.jpeg')}
               name="Jung_E"
               kind="Movie"
             />
