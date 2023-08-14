@@ -146,6 +146,7 @@ const styles = StyleSheet.create({
     color: Colors.white,
     marginHorizontal: 12,
     fontSize: 12,
+    lineHeight: 18,
   },
   castContainer: {
     marginHorizontal: 12,
