@@ -1,4 +1,4 @@
-export const movies = {
+export const movies: any = {
   Trending: [
     {
       image: require('@assets/images/jung_e.png'),

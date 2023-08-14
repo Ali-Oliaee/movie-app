@@ -78,7 +78,7 @@ const SearchScreen: React.FC = () => {
         </View>
         <View style={styles.sectionContainer}>
           <View style={styles.row}>
-            <Text style={styles.rowTitle}>‌Based on actor</Text>
+            <Text style={styles.rowTitle}>Based on actor</Text>
             <TouchableOpacity style={styles.LinkContainer}>
               <Text style={styles.Link}>See All</Text>
               <RightArrowIcon />

@@ -15,7 +15,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
 
   return (
     <AppLayout>
-      <ScrollView style={{flex: 1}} showsVerticalScrollIndicator={false}>
+      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
         <ScrollView
           horizontal
           style={styles.categoryContainer}

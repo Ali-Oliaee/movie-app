@@ -110,7 +110,7 @@ const MovieScreen: React.FC<Props> = ({navigation}) => {
         </Text>
         <View style={styles.episodeContainer}>
           <View style={styles.row}>
-            <View style={{flexDirection: 'row'}}>
+            <View style={styles.flexRow}>
               <Text style={styles.rowTitle}>Season 1</Text>
               <Text style={styles.rowSubtitle}>10/10 Episode</Text>
             </View>
