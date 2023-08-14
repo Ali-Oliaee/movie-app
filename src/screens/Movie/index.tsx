@@ -122,19 +122,19 @@ const MovieScreen: React.FC<Props> = ({navigation}) => {
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <SeriesCard
               name="Season 1 - Episode 1"
-              image={require('@assets/images/dicaprio.png')}
+              image={require('@assets/images/season1.png')}
               time="43 min"
               isChecked
             />
             <SeriesCard
               name="Season 1 - Episode 2"
-              image={require('@assets/images/dicaprio.png')}
+              image={require('@assets/images/season2.png')}
               time="50 min"
               isChecked
             />
             <SeriesCard
               name="Season 1 - Episode 3"
-              image={require('@assets/images/dicaprio.png')}
+              image={require('@assets/images/season1.png')}
               time="39 min"
               isChecked
             />

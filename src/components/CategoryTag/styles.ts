@@ -4,7 +4,6 @@ import {Colors} from '../../theme/colors';
 const styles = StyleSheet.create({
   container: {
     padding: 8,
-    paddingVertical: 6,
     backgroundColor: 'rgba(257,257,257,0.1))',
     borderRadius: 4,
     marginEnd: 10,
@@ -18,13 +17,12 @@ const styles = StyleSheet.create({
   },
   title: {
     color: Colors.white,
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: 12,
   },
   number: {
-    marginStart: 12,
+    marginStart: 8,
     color: 'rgba(255,255,255,0.6)',
-    fontSize: 12,
+    fontSize: 10,
   },
 });
 
