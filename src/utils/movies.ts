@@ -1,7 +1,7 @@
 export const movies: any = {
   Trending: [
     {
-      image: require('@assets/images/jung_e.png'),
+      image: require('@assets/images/jung-e.jpeg'),
       name: 'Jung_E',
       kind: 'Movie',
       description:
@@ -37,7 +37,7 @@ export const movies: any = {
   ],
   New: [
     {
-      image: require('@assets/images/barbie.png'),
+      image: require('@assets/images/barbie.jpg'),
       name: 'Barbie',
       kind: 'Movie',
       description:
@@ -49,7 +49,7 @@ export const movies: any = {
       rate: 6.6,
     },
     {
-      image: require('@assets/images/transformers.png'),
+      image: require('@assets/images/transformers.jpeg'),
       name: 'Transformers',
       kind: 'Movie',
       description:
@@ -61,7 +61,7 @@ export const movies: any = {
       rate: 6.9,
     },
     {
-      image: require('@assets/images/trolls.png'),
+      image: require('@assets/images/trolls.jpeg'),
       name: 'Trolls',
       kind: 'Movie',
       description:
@@ -87,7 +87,7 @@ export const movies: any = {
       rate: 8.8,
     },
     {
-      image: require('@assets/images/barbie.png'),
+      image: require('@assets/images/barbie.jpg'),
       name: 'Barbie',
       kind: 'Movie',
       description:
@@ -99,7 +99,7 @@ export const movies: any = {
       rate: 6.6,
     },
     {
-      image: require('@assets/images/jung_e.png'),
+      image: require('@assets/images/jung-e.jpeg'),
       name: 'Jung_E',
       kind: 'Movie',
       description:
@@ -150,7 +150,7 @@ export const movies: any = {
   ],
   Animation: [
     {
-      image: require('@assets/images/trolls.png'),
+      image: require('@assets/images/trolls.jpeg'),
       name: 'Trolls',
       kind: 'Movie',
       description:
