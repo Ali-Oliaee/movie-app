@@ -16,9 +16,9 @@ This project is a movie app built with react native and available for both Andro
 <h2 align="center">
 Screenshots
 </h2>
-![Home](/screenshots/1.png)
-![Movie](/screenshots/2.png)
-![Search](/screenshots/3.png)
+<img src="/screenshots/sc1.png"/>
+<img src="/screenshots/sc2.png"/>
+<img src="/screenshots/sc3.png"/>
 
 ## setup and run
 
