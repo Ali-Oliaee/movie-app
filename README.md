@@ -15,10 +15,10 @@ This project is a movie app built with react native and available for both Andro
 
 <h2 align="center">
 Screenshots
+</h2>
 ![Home](/screenshots/1.png)
 ![Movie](/screenshots/2.png)
 ![Search](/screenshots/3.png)
-</h2>
 
 ## setup and run
 
