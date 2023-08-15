@@ -146,6 +146,7 @@ const styles = StyleSheet.create({
     color: Colors.white,
     marginHorizontal: 12,
     fontSize: 12,
+    lineHeight: 18,
   },
   castContainer: {
     marginHorizontal: 12,
@@ -154,6 +155,9 @@ const styles = StyleSheet.create({
   episodeContainer: {
     marginHorizontal: 12,
     marginTop: 20,
+  },
+  flexRow: {
+    flexDirection: 'row',
   },
   row: {
     flexDirection: 'row',

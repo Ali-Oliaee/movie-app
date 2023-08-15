@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
     marginVertical: 4,
     paddingHorizontal: 8,
+    lineHeight: 16,
   },
   tagsContainer: {
     flexDirection: 'row',

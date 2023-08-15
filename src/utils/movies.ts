@@ -1,4 +1,4 @@
-export const movies = {
+export const movies: any = {
   Trending: [
     {
       image: require('@assets/images/jung_e.png'),
@@ -136,16 +136,16 @@ export const movies = {
       rate: 9.9,
     },
     {
-      image: require('@assets/images/office.jpeg'),
-      name: 'The Office',
+      image: require('@assets/images/silo.png'),
+      name: 'Silo',
       kind: 'Series',
       description:
-        'This US adaptation, set at a paper company in Scranton, Pa., has a similar documentary style to that of the Ricky Gervais-led British original.',
+        'In a ruined and toxic future, a community exists in a giant underground silo that plunges hundreds of stories deep; there, people live in a society full of regulations they believe are meant to protect them.',
       genres: ['Comedy'],
-      year: 2012,
-      age: '+13',
-      isLiked: true,
-      rate: 7.9,
+      year: 2023,
+      age: '+17',
+      isLiked: false,
+      rate: 8.1,
     },
   ],
   Animation: [

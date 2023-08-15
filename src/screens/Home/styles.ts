@@ -3,6 +3,7 @@ import {Colors} from '../../theme/colors';
 import {Fonts} from '../../theme/fonts';
 
 const styles = StyleSheet.create({
+  container: {flex: 1},
   categoryContainer: {
     marginTop: Platform.select({
       android: 40,
