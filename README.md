@@ -13,6 +13,13 @@ This project is a movie app built with react native and available for both Andro
 <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Jest.svg" width="48" title="Unit Test">
 </p>
 
+<h2 align="center">
+Screenshots
+</h2>
+<img src="/screenshots/sc1.png"/>
+<img src="/screenshots/sc2.png"/>
+<img src="/screenshots/sc3.png"/>
+
 ## setup and run
 
 make sure you have Node and npm installed.
