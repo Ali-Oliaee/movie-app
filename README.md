@@ -22,7 +22,7 @@ Screenshots
 <img src="/screenshots/sc3.png" width="30%"/>
 </p>
 
-## setup and run
+## :rocket: setup and run
 
 make sure you have Node and npm installed.
 install dependencies with this command:
@@ -50,4 +50,4 @@ ios:
 npm react-native run-ios
 ```
 
-:o: or you can simply download the apk from my [portfolio](https://ali-oliaee.ir/)
+:calling: or you can simply download the apk from Release section
