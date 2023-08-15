@@ -141,7 +141,7 @@ export const movies: any = {
       kind: 'Series',
       description:
         'In a ruined and toxic future, a community exists in a giant underground silo that plunges hundreds of stories deep; there, people live in a society full of regulations they believe are meant to protect them.',
-      genres: ['Comedy'],
+      genres: ['Action'],
       year: 2023,
       age: '+17',
       isLiked: false,
