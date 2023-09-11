@@ -5,17 +5,16 @@ export default class HttpService {
   private static _instance: AxiosInstance;
 
   constructor() {
-    this.baseURL = 'https://moviesdatabase.p.rapidapi.com';
+    this.baseURL = 'https://api.themoviedb.org/3';
   }
 
   public static build() {
     if (!this._instance) {
       this._instance = axois.create({
-        baseURL: 'https://moviesdatabase.p.rapidapi.com',
+        baseURL: 'https://api.themoviedb.org/3',
         headers: {
-          'X-RapidAPI-Key':
-            'fd05f27304msh9f689b8faa2de30p1f0b40jsn0b064637c3c4',
-          'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com',
+          Authorization:
+            'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZjBhZGM0MGRmNmQxMjM3N2I0NTJiNGFmYWEwYTRhYiIsInN1YiI6IjY0ZmNhYzU2YjdhMTU0MDEwMDFmOGI2NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AFd0z1Q15hrVXpQk2DmN7fx7qm6KpHSfsVGN0EdAFq4',
         },
       });
       this._instance.interceptors.response.use(
